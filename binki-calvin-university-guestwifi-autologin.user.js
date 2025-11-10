@@ -35,7 +35,7 @@
   messageDiv.style.background = 'black';
   messageDiv.style.color = '#aaa';
   document.body.prepend(messageDiv);
-  for (let countDown = 5; countDown >= 0 && !tainted; countDown--) {
+  for (let countDown = 2; countDown >= 0 && !tainted; countDown--) {
     messageDiv.textContent = `Automatically filling in ${countDown}s`;
     await delayAsync(1000);
   }
