@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name binki-calvin-university-guestwifi-autologin
-// @version 1.0.0
+// @version 1.0.1
 // @match https://getconnected.calvin.edu/guest/*
 // @grant GM.getValue
 // @grant GM.setValue
