@@ -31,14 +31,6 @@
       tainted = true;
     });
   }
-  const messageDiv = document.createElement('div');
-  messageDiv.style.background = 'black';
-  messageDiv.style.color = '#aaa';
-  document.body.prepend(messageDiv);
-  for (let countDown = 2; countDown >= 0 && !tainted; countDown--) {
-    messageDiv.textContent = `Automatically filling in ${countDown}s`;
-    await delayAsync(1000);
-  }
 
   const registerButtonSaveOnClickHandler = async e => {
     registerButton.removeEventListener('click', registerButtonSaveOnClickHandler);
@@ -61,5 +53,4 @@
     emailInput.value = saved.email;
     registerButton.click();
   }
-  messageDiv.remove();
 })();
