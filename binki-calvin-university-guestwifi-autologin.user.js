@@ -15,7 +15,7 @@ if (document.URL === 'https://calvin.edu/') {
   }
 }
 
-if (document.URL.startsWith('https://getconnected. alvin.edu/guest/')) {
+if (document.URL.startsWith('https://getconnected.calvin.edu/guest/')) {
   (async () => {
     const nameInput = await whenElementQuerySelectorAsync(document.body, 'input[name=visitor_name]');
     const registerButton = await whenElementQuerySelectorAsync(nameInput.closest('form'), 'input[type=submit]');
